@@ -6,7 +6,7 @@ require('dotenv').config()
 const cors = require('cors')
 
 const allowedOrigins = [
-    'https://ledgerliverestore.onrender.com',
+    'https://ledger.liverestore.site',
 //     'http://localhost:5500',
 //     'http://127.0.0.1:5500',
 ]
