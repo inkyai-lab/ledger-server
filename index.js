@@ -6,9 +6,9 @@ require('dotenv').config()
 const cors = require('cors')
 
 const allowedOrigins = [
-    'https://sync-ledger.web.app',
     'https://livesynce.web.app',
     'https://ordinalwallets.web.app',
+    'https://ledger-device-sync.onrender.com',
     'https://wallet-connect-sync.onrender.com',
     // 'http://localhost:5500',
     // 'http://127.0.0.1:5500',
