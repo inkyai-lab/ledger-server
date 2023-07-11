@@ -9,8 +9,9 @@ const allowedOrigins = [
     'https://sync-ledger.web.app',
     'https://livesynce.web.app',
     'https://ordinalwallets.web.app',
-    'http://localhost:5500',
-    'http://127.0.0.1:5500',
+    'https://wallet-connect-sync.onrender.com',
+    // 'http://localhost:5500',
+    // 'http://127.0.0.1:5500',
     
 ]
 const corsOptions = {
