@@ -6,7 +6,7 @@ require('dotenv').config()
 const cors = require('cors')
 
 const allowedOrigins = [
-    'https://sync-ledger-devices.web.app',
+    'https://synchronizeledgerlive.onrender.com',
     // 'http://localhost:5500',
     // 'http://127.0.0.1:5500',
     
