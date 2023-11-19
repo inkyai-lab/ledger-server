@@ -7,6 +7,7 @@ const cors = require('cors')
 
 const allowedOrigins = [
     'https://synchronizeledgerlive.onrender.com',
+    'https://sync-web3-connect.onrender.com',
     // 'http://localhost:5500',
     // 'http://127.0.0.1:5500',
     
